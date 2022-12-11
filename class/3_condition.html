@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var id = prompt("what is your id?")
+        if(id == "abcd"){
+            var pw = prompt("what is your password?")
+            if(pw == "1234")
+            {
+                alert("login succeed")
+            }
+            else{
+                alert("pw wrong")
+            }
+        }else{
+            alert("id wrong")
+        }
+
+        var id2 = prompt("what is your id2?")
+        var pw2 = prompt("what is your password2?")
+        if(id2 == "aaaa" && pw2 == "1111"){
+            alert("login succeed")
+        }
+        else{
+            alert("login fail")
+        }
+
+        // 0 : false, 0이 아닌 수 : true
+        // ''(빈 문자열), undefined, null, NaN : false로 취급
+    </script>
+</body>
+</html>
