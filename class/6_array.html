@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function members()
+        {
+            return ["a", "b", "c"];
+        }
+
+        my_members = members();
+        document.write(my_members[0]);
+        document.write(my_members[1]);
+        document.write("<br />")
+
+        names = ["jenny", "jisoo"];
+        names.push("rose"); //마지막에 원소 추가
+        names = names.concat(["minji", "suzi"]); //여러개의 원소 추가
+        names.unshift("lisa"); //처음에 원소 추가
+        names.splice(1, 2, "aa", "bb"); //index1부터 2개 없애고 'aa', 'bb' 추가
+
+        names.shift(); //처음 삭제
+        names.pop(); //마지막 삭제
+        names.sort(); //정렬
+        names.reverse(); //거꾸로 정렬
+
+        for(var i=0;i<names.length;i++)
+        {
+            document.write(names[i].toUpperCase() + "<br />")
+        }
+    </script>
+</body>
+</html>
