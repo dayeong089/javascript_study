@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type = "text/javascript">
+        function numbering()
+        {
+            for(var i=0; i<10; i++)
+            {
+                document.write(i);
+            }
+            document.write("<br />");
+        }
+
+        numbering();
+        numbering();
+        numbering();
+
+        function get_argument(arg1, arg2)
+        {
+            return arg1+arg2;
+        }
+        alert(get_argument(1, 2));
+
+        get_argument2 = function(arg1, arg2){
+            return arg1*arg2;
+        }
+        alert(get_argument2(3, 4));
+        
+    </script>
+</body>
+</html>
