@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var grades = {'korean':98, 'math':70, 'science':40}; //key:value
+        document.write(grades['korean']);
+        document.write(grades['math']);
+        document.write(grades.korean);
+        document.write(grades['kor'+'ean'] + "<br />");
+
+        var price = new Object();
+        price['pen'] = 1000
+        price['water'] = 500
+
+        for(var key in price){
+            document.write("key : "+key+" , value : "+price[key]+"<br />")
+        }
+
+        var scores = {
+            'list' : {'a' : 80, 'b' : 90, 'c' : 20},
+            'show' : function(){
+                document.write(this.list['a'] + "<br />")
+                document.write(this['list']['c'] + "<br />")
+                for(var key in this.list){
+                    document.write("key : " + key + " , value : " + this.list[key] + "<br />")
+                }
+            }
+        }
+
+        document.write(scores.list['a'] + "<br />")
+        scores.show();
+    </script>
+</body>
+</html>
