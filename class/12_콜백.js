@@ -42,9 +42,28 @@ var process=[
     function(input){return input*input},
     function(input){return input/2}
 ]
-
 var input = 1
 for(var i=0; i<process.length; i++){
     input = process[i](input);
     console.log(input)
 }
+
+
+//sort
+var numbers = [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+console.log(numbers.sort()) // 1, 10, 2, 20, 3, 4, 5 ...
+var sortfunc = function(a, b){
+    // console.log(a, b);
+    // if(a>b){
+    //     return 1;
+    // }else if(a<b){
+    //     return -1;
+    // }else{
+    //     return 0;
+    // }
+    return a-b;
+}
+console.log(numbers.sort(sortfunc))
+
+
+//ajax : 비동기 콜백
