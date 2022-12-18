@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arguments : 함수에 전달된 인수에 해당하는 Array 형태의 객체
+        function sum(){
+            var _sum = 0
+            for(var i=0; i<arguments.length; i++){
+                document.write(i + " : " + arguments[i] + '<br />');
+                _sum += arguments[i]
+            }
+            return _sum
+        }
+        document.write("result : " + sum(1,2,3,4))
+
+
+        function one(arg1){
+            document.write(
+                '<br />one.length ', one.length, //함수가 정의한 매개변수의 숫자 - 1
+                '<br />arguments.length ', arguments.length //실제로 함수를 호출할 때 몇개의 인자를 전달했는가 - 2
+            )
+        }
+        one("val1", "val2")
+    </script>
+</body>
+</html>
